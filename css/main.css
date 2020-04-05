@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom,#ffd1d1,#ffe6e6, white);
+    background-repeat: no-repeat;
+    font-family: "Abhaya Libre", serif;
+    color: indianred;
+}
+
+header {
+    max-height: 3em;
+    background-color: indianred;
+    padding: 0.5em 3em;
+    color: white;
+}
+header #logo {
+    margin: 0.3em 0;
+    height: 2em;
+    display: inline-block;
+}
+header ul {
+    position: absolute;
+    right: 3em;
+    top: 0.05em;
+    list-style: none;
+    min-width: 200px;
+}
+header ul li {
+    text-align: center;
+    display: inline-block;
+}
+header ul li a {
+    padding: 10px 40px;
+    font-size: 1.5em;
+    font-family: "Abhaya Libre", serif;
+    color: white;
+    text-decoration: none;
+
+}
+header ul li a:hover {
+    color: indianred;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    min-height: 300px;
+    padding: 1em 3em;
+    box-shadow: 5px 5px 6px lightgray;
+}
+section h1, h2, h3, h4, h5, h6 {
+    color: indianred;
+    text-align: left;
+}
+section img {
+    width: 100%;
+    margin: 20px 0;
+}
+section .blog {
+    max-height: 200px;
+    object-fit: cover;
+
+}
+section .goOn {
+    color: darkgray;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+section .goOn:hover {
+    color: indianred;
+}
+section a {
+    color: indianred;
+}
+section .author {
+    text-align: right;
+    color: darkgray;
+    text-decoration: none;
+}
+section .author a {
+    color: darkgray;
+    text-decoration: none;
+}
+section p {
+    color: black;
+}
+.blogs {
+    margin: 2em 2%;
+    padding: 0 1%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: black;
+    height: auto;
+    text-align: center;
+}
+.blogs img {
+    height: 150px;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+#animation {
+    max-width: 30em;
+    text-align: center;
+    color: indianred;
+    font-size: 1.5em;
+    font-weight: bolder;
+    height: 33px;
+    background-color: #ffe6e6;
+    border-radius: 11px;
+    position: relative;
+    animation: block 2.5s linear 0.5s infinite alternate;
+}
+@keyframes block {
+    from {
+        left: 0;
+        top:0;
+    }
+    to {
+        left: calc(100% - 30em);
+        top:0;
+    }
+}
+#comment, #delete {
+    background-color: indianred;
+    border: none;
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: white;
+    font-family: "Abhaya Libre", serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+#delete {
+    visibility: hidden;
+}
+.form {
+    margin: 0 auto;
+    max-width: 90%;
+    color: gray;
+}
+#commentblock {
+    display: none;
+}
+#commentary input {
+    background-color: whitesmoke;
+    border: 0.05em solid lightgray;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    font-size: 2em;
+}
+#commentary input[type=text],input[type=email],input[type=url] {
+    width: calc(100% - 0.55em);
+}
+textarea {
+    width: 100%;
+    min-height: 6em;
+    background-color: whitesmoke;
+    border: 0.05em solid lightgray;
+    border-radius: 5px;
+    resize: vertical;
+    margin: 0.5em 0;
+}
+#commentary input[type=submit] {
+    display: block;
+    background-color: indianred;
+    color: white;
+    width: 100%;
+}
+#commentary label {
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+#commentArea {
+    background-color: whitesmoke;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+}
+#commentArea p {
+    color: dimgray;
+}
+#commentArea .author {
+    text-align: left;
+}
+#commentArea #commentText {
+    color: black;
+    padding: 0.5em;
+}

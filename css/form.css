@@ -1,0 +1,29 @@
+#login input {
+    background-color: whitesmoke;
+    border: 0.05em solid lightgray;
+    border-radius: 5px;
+    width: calc(100% - 0.55em);
+    padding: 0.5em;
+    margin: 0.5em 0;
+    font-size: 2em;
+}
+#login label {
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+}
+#button {
+    display: block;
+    background-color: indianred;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    max-width: 10em;
+    padding: 0.5em 1em;
+    margin: 1em auto;
+    font-size: 1.2em;
+    font-weight: bold;
+}

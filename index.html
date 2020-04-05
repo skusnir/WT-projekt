@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalendarium</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" media="print" href="css/print.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Hlavná stránka">
+            <img id="logo" src="img/logo_white.png" alt="LOGO">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="blog.html" title="Blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" title="Log In">
+                        Prihlásiť sa
+                    </a>
+                <li>
+                    <a href="about.html" title="O nás">
+                        O nás
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="animation">Blog o kalendároch našich každodenných</div>
+        <a href="timemanagment.html" class="goOn" title="Kalendar">
+            <div class="blogs">
+                <img src="img/kalendar.jpg  " alt="timemanagment" class="blog">
+                Kalendár
+            </div>
+        </a>
+        <a href="timemanagment.html" class="goOn" title="Timemanagment">
+            <div class="blogs">
+                <img src="img/timemanagment.jpg" alt="timemanagment" class="blog">
+                Timemanagment
+            </div>
+        </a>
+        <a href="mays.html" class="goOn" title="Mayský kalendár">
+            <div class="blogs">
+                <img src="img/maysky.jpg" alt="may" class="blog">
+                Mayský kalendár
+            </div>
+        </a>
+        <button id="comment" onclick="document.getElementById('commentblock').style.display = 'block'">Pridať svoj názor</button>
+        <div class="form" id="commentblock">
+            <form id="commentary">
+                <label for="name">Meno:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="url">URL obrázka:</label><br>
+                <input type="url" id="url" name="url"><br>
+                <input type="radio" id="good" name="rating" value="Dobré" checked>
+                <label for="good">Dobré hodnotenie</label><br>
+                <input type="radio" id="bad" name="rating" value="Zlé">
+                <label for="bad">Zlé hodnotenie</label><br><br>
+                <label for="textarea">Tvoj názor:</label><br>
+                <textarea id="textarea" name="textarea" placeholder="Sem pridaj komentár....." required></textarea><br>
+                <input type="checkbox" id="verifitacion" required>
+                <label for="verifitacion">Súhlasím so zverejnením názoru</label><br>
+                <input type="submit" value="Odoslať!">
+            </form>
+        </div>
+        <div id="infoOutput"></div>
+        <div id="comments"></div>
+        <div>
+            <button id="delete">Zmazať všetko staršie ako deň</button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js" integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8=" crossorigin="anonymous"></script>
+    <script id="commentOutput" type="text/template">
+        <div id="commentArea">
+            <h3>Komentár od {{name}}</h3>
+            <div class="author">{{email}},  {{date}}</div>
+            <p>{{{url}}}</p>
+            <p>Hodnotenie: {{rating}}</p>
+            <p id="commentText">{{textarea}}</p>
+        </div>
+    </script>
+    <script src="js/localStorage.js"></script>
+</body>
+</html>

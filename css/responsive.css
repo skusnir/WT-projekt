@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1000px) {
+    section {
+        width: 50%;
+    }
+    .form {
+        margin: 0 auto;
+        max-width: 30%;
+    }
+    .form {
+        margin: 0 auto;
+        max-width: 30%;
+    }
+    label  {
+        font-size: 1em !important;
+    }
+    input  {
+        font-size: 1em !important;
+    }
+    .blogs {
+        width: 27%;
+        display: inline-block;
+    }
+    .blogs:hover {
+        transform: scale(1.25);
+        color: indianred;
+        padding-bottom: 1em;
+        background-color: whitesmoke;
+    }
+    #commentblock {
+        max-width: 50% !important;
+    }
+}
+
